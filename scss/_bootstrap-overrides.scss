@@ -29,4 +29,21 @@
     box-shadow: 0 0 0 0.2rem rgba(240, 95, 64,.5) !important;
   }
 }
+
+
+.btn-dark {
+  background-color: 0 0 0 0.2rem;
+  border-color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: (rgba(85, 85, 85, 0.5)) !important;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(100, 80, 80, 0.5) !important;
+  }
+}
+
   
