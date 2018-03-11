@@ -41,6 +41,9 @@
 .carousel-control.left {
   background-image: none; }
 
+.img-rounded {
+  border-radius: 25%; }
+
 body,
 html {
   width: 100%;
