@@ -47,4 +47,28 @@
   }
 }
 
+.btn-blue {
+  background-color: #010080;
+  border-color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: #010080 !important;
+    box-shadow: 0 0 0 0.2rem rgba(20, 30, 100, 0.5) !important;
+  }
+}
+
+.btn-white {
+  background-color: #ffffff;
+  border-color: $primary;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $white;
+    background-color: (#ffffff) !important;
+    box-shadow: 0 0 0 0.2rem rgba(230, 230, 230, 0.5) !important;
+  }
+}
+
   
