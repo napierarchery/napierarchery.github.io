@@ -71,4 +71,13 @@
   }
 }
 
+.img-shaded {
+  &:hover,
+  &:focus,
+  &:active {
+    box-shadow: 0 0 0 0.2rem rgba(230, 230, 230, 0.5) !important;
+  }
+
+}
+
   
