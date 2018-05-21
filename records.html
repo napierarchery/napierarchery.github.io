@@ -67,13 +67,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                        <a class="nav-link js-scroll-trigger" href="#claim"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#news">News</a>
+                        <a class="nav-link js-scroll-trigger" href="#records">Records</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#join">Join</a>
+                        <a class="nav-link js-scroll-trigger" href="#claim">How To Claim</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#find">Find Us</a>
@@ -101,62 +101,84 @@
 
 
 
-    <section class="bg-dark text-white" id="contact">
 
-
-
-
-    </section>
-    <!--End Contact-->
-
-    <!--About-->
+<!--About-->
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 mx-auto text-center">
                     <img class="img-responsive img-rounded" src="img/NUAC-XLlogo.png" width="25%" alt="Edinburgh Napier University Archery-Logo">
-
+                    
+                    
                     <br/><br/><br/>
-                    <h2 class="section-heading text-white">About Napier Archery</h2>
-                    <hr class="light my-4">
-                    <br/>
-                    <!-- About Blurb -->
-                    <div class="row">
-                        <div class="col-lg-5 col-md-6 col-sm-12 col-xs-12 mx-auto text-center">
-                            <p class="text-faded mb-4">Napier Archery is primarily a social club for any students interested in the sport of archery. Whether you've never laid eyes on a bow and arrow, or you've spent years shooting competitively, you'll find it a fun and welcoming
-                                enviroment to people of all abilities. As well as the social aspects of the sport as a way of making new friends, we also welcome anyone wishing to get involved with archery competitively.</p>
-                        </div>
-                        <div class="col-lg-5 col-md-6 d-none d-md-block mx-auto text-center">
-                            <p class="text-faded mb-4">During the academic year the club regularly competes in events and competitions at a university level in the Scottish Student Sport Archery league and British University and Colleges Championships, as well as local and national
-                                events in target and field archery all year round. Napier Archery has enjoyed a strong history of success in all competition formats and categories.</p>
-                        </div>
-                        <!--
-                  <div class="col-lg-4 col-md-6 d-none d-lg-block mx-auto text-center">
-                      <p class="text-faded mb-4">Edinburgh Napier University Archery Club was set up at the tail-end of 2004 and has been competing regularly at inter-university competitions.</p>
-                  </div>
-                -->
-                    </div>
+                    
 
+                  
 
-                    <!-- Governing body links -->
-                    <hr class="light my-4">
-                    <br/>
-                    <p class="text-faded mb-4">Napier Archery is an active member of several UK based archery organisations.</p>
-                    <span class="mx-auto text-center d-block">
-                <a  href="https://www.archerygb.org" target="_blank" rel="noopener"><img class="img-responsive img-rounded-50" src="img/agb-banner.jpg" width = "45%" alt="archery GB" ></a>
-                &nbsp;  
-                <a  href="http://scottishfieldarchery.scot/" target="_blank" rel="noopener"><img class="img-responsive img-rounded-50" src="img/sfaa-banner.jpg" width = "45%" alt="Scottish Field Archery Association" ></a>
-                &nbsp;
-                <a  href="http://scottisharchery.org.uk/" target="_blank" rel="noopener"><img class="img-responsive img-rounded-50" src="img/saa-banner-1.jpg" width = "45%" alt="Scottish Archery Association" ></a>
-            </span>
-
-                    <br/>
-                    <a class="btn btn-light btn-xl js-scroll-trigger" href="#news">Get Started!</a>
-                </div>
+                    
+                </div> 
             </div>
         </div>
     </section>
     <!--End About-->
+
+
+    <section id="records">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 mx-auto text-center">
+                    <h2 class="section-heading">Records</h2>
+                    <hr class="light my-4">
+                    <div class="btn-group btn-group-justified">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-xl" onclick="showTarget()">Target</button>
+                      </div>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-xl" onclick="showField()">Field</button>
+                      </div>
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-primary btn-xl" onclick="showOther()">Other</button>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 mx-auto text-center">
+                    <div id="Target" style="display:none;" class="answer_list" >Target Records</div>
+                    <div id="Field" style="display:none;" class="answer_list" >Field Records</div>
+                    <div id="Other" style="display:none;" class="answer_list" >Other Records</div>
+                </div>
+            </div>
+        </div>     
+    </section>
+
+
+
+    <!--How to claim-->
+    <section class="bg-dark text-white" id="claim">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h2 class="section-heading">How To Claim A Club Record</h2>
+                    <hr class="light my-4">
+                    <div class="mx-auto text-left">
+                        <p class="mb-10">
+                            To claim a record, the following criteria must be fulfilled:
+                            <ul>
+                              <li>The score must be shot in competition conditions at SSS, BUCS, BUTC, or Record Status competitions.</li>
+                              <li>The claimant must have partook in the competition representing Napier Archery (or one of the generally accepted alternate names, eg.NUAC).</li>
+                              <li>The claim must be accompanied by the official competition results released by the organiser.</li>
+                            </ul>
+                            To claim a record, simply email your claim to to the club with the supporting competition results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <!--End Claim-->
+
+    
 
 
 
@@ -171,6 +193,29 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    
+    
+    <script>               
+    function showTarget() {
+    document.getElementById('Target').style.display = "block";
+    document.getElementById('Field').style.display = "none";
+    document.getElementById('Other').style.display = "none";
+    }
+    
+    function showField() {
+    document.getElementById('Target').style.display = "none";
+    document.getElementById('Field').style.display = "block";
+    document.getElementById('Other').style.display = "none";
+    }
+    
+    function showOther() {
+    document.getElementById('Target').style.display = "none";
+    document.getElementById('Field').style.display = "none";
+    document.getElementById('Other').style.display = "block";
+    }
+    </script> 
+    
+    
 
 </body>
 
