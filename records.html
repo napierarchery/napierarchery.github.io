@@ -102,21 +102,21 @@
 
 
 
-<!--About-->
+    <!--About-->
     <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 mx-auto text-center">
                     <img class="img-responsive img-rounded" src="img/NUAC-XLlogo.png" width="25%" alt="Edinburgh Napier University Archery-Logo">
-                    
-                    
+
+
                     <br/><br/><br/>
-                    
 
-                  
 
-                    
-                </div> 
+
+
+
+                </div>
             </div>
         </div>
     </section>
@@ -130,26 +130,33 @@
                     <h2 class="section-heading">Records</h2>
                     <hr class="light my-4">
                     <div class="btn-group btn-group-justified">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn-xl" onclick="showTarget()">Target</button>
-                      </div>
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn-xl" onclick="showField()">Field</button>
-                      </div>
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-primary btn-xl" onclick="showOther()">Other</button>
-                      </div>
-                  </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-xl" onclick="showTargetIn()">Target Indoors </button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-xl" onclick="showTargetOut()">Target Outdoors</button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-xl" onclick="showField()">&nbsp &nbsp &nbsp &nbsp &nbsp Field &nbsp &nbsp &nbsp &nbsp &nbsp</button>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary btn-xl" onclick="showOther()">&nbsp &nbsp &nbsp &nbsp &nbsp Other &nbsp &nbsp &nbsp &nbsp &nbsp</button>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
+        <br></br>
+        <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 mx-auto text-center">
-                    <div id="Target" style="display:none;" class="answer_list" >Target Records</div>
-                    <div id="Field" style="display:none;" class="answer_list" >Field Records</div>
-                    <div id="Other" style="display:none;" class="answer_list" >Other Records</div>
+                    <div id="TargetIn" style="display:none;" class="answer_list">Target Indoor Records</div>
+                    <div id="TargetOut" style="display:none;" class="answer_list">Target Outdoor Records</div>
+                    <div id="Field" style="display:none;" class="answer_list">Field Records</div>
+                    <div id="Other" style="display:none;" class="answer_list">Other Records</div>
                 </div>
             </div>
-        </div>     
+        </div>
     </section>
 
 
@@ -165,9 +172,9 @@
                         <p class="mb-10">
                             To claim a record, the following criteria must be fulfilled:
                             <ul>
-                              <li>The score must be shot in competition conditions at SSS, BUCS, BUTC, or Record Status competitions.</li>
-                              <li>The claimant must have partook in the competition representing Napier Archery (or one of the generally accepted alternate names, eg.NUAC).</li>
-                              <li>The claim must be accompanied by the official competition results released by the organiser.</li>
+                                <li>The score must be shot in competition conditions at SSS, BUCS, BUTC, or Record Status competitions.</li>
+                                <li>The claimant must have partook in the competition representing Napier University Archery Club.</li>
+                                <li>The claim must be accompanied by the official competition results released by the organiser.</li>
                             </ul>
                             To claim a record, simply email your claim to to the club with the supporting competition results.
                         </p>
@@ -178,7 +185,7 @@
     </section>
     <!--End Claim-->
 
-    
+
 
 
 
@@ -193,29 +200,39 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
-    
-    
-    <script>               
-    function showTarget() {
-    document.getElementById('Target').style.display = "block";
-    document.getElementById('Field').style.display = "none";
-    document.getElementById('Other').style.display = "none";
-    }
-    
-    function showField() {
-    document.getElementById('Target').style.display = "none";
-    document.getElementById('Field').style.display = "block";
-    document.getElementById('Other').style.display = "none";
-    }
-    
-    function showOther() {
-    document.getElementById('Target').style.display = "none";
-    document.getElementById('Field').style.display = "none";
-    document.getElementById('Other').style.display = "block";
-    }
-    </script> 
-    
-    
+
+
+    <script>
+        function showTargetIn() {
+            document.getElementById('TargetIn').style.display = "block";
+            document.getElementById('TargetOut').style.display = "none";
+            document.getElementById('Field').style.display = "none";
+            document.getElementById('Other').style.display = "none";
+        }
+
+        function showTargetOut() {
+            document.getElementById('TargetOut').style.display = "block";
+            document.getElementById('TargetIn').style.display = "none";
+            document.getElementById('Field').style.display = "none";
+            document.getElementById('Other').style.display = "none";
+        }
+
+        function showField() {
+            document.getElementById('TargetIn').style.display = "none";
+            document.getElementById('TargetOut').style.display = "none";
+            document.getElementById('Field').style.display = "block";
+            document.getElementById('Other').style.display = "none";
+        }
+
+        function showOther() {
+            document.getElementById('TargetIn').style.display = "none";
+            document.getElementById('TargetOut').style.display = "none";
+            document.getElementById('Field').style.display = "none";
+            document.getElementById('Other').style.display = "block";
+        }
+    </script>
+
+
 
 </body>
 
