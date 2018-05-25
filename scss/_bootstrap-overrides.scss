@@ -5,6 +5,7 @@
 
 
 
+
 .btn {
   font-weight: 700;
   text-transform: uppercase;
@@ -21,6 +22,7 @@
 .btn-primary {
   background-color: $primary;
   border-color: $primary;
+  color: #ffffff;
   &:hover,
   &:focus,
   &:active {
@@ -53,6 +55,7 @@
 .btn-blue {
   background-color: #010080;
   border-color: $primary;
+  color: $white;
   &:hover,
   &:focus,
   &:active {

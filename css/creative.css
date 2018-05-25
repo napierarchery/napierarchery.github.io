@@ -1788,7 +1788,8 @@ a {
 
 .btn-primary {
   background-color: #ee5028;
-  border-color: #ee5028; }
+  border-color: #ee5028;
+  color: #ffffff; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     color: #fff;
     background-color: #ea3e13 !important; }
@@ -1806,7 +1807,8 @@ a {
 
 .btn-blue {
   background-color: #010080;
-  border-color: #ee5028; }
+  border-color: #ee5028;
+  color: #fff; }
   .btn-blue:hover, .btn-blue:focus, .btn-blue:active {
     color: #fff;
     background-color: #010080 !important;
