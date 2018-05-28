@@ -1,31 +1,32 @@
-IndoorTarget = {
-    "round": [
-        "Portsmouth":
-            [
-                {"category": "Senior Gent Recurve",	"name": "Pete Wojtczuk", "score": 575, "competition": "BUCS Indoors", "date": "15/March/2012"},
-                {"category": "Senior Lady Recurve",	"name": "Kat McManus", "score": 555, "competition": "SUS Indoors", "date": "10/April/2015"}
-            ],
-    
-        "WA 18":
-            [
-                {"category": "Novice Gent Compound",	"name": "Dirk Diggler", "score": 400, "competition": "SUSF League Match", "date": "01/November/2005"},
-                {"category": "Novice Lady Longbow",	"name": "Long Bowman", "score": 3, "competition": "Some Shoot", "date": "31/December/2009"}
-            ]
-    ]    
-}
+{
+    "IndoorTarget": ["Portsmouth", "WA 18"],
+    "OutdoorTarget": ["WA 1440", "Albion"],
 
-OutdoorTarget = {
-    "round": {
-        "WA 1440":
+    "Portsmouth": [
+                {   "category": "Senior Gent Recurve",	
+                    "name": "Pete Wojtczuk", 
+                    "score": 575, 
+                    "competition": "BUCS Indoors", 
+                    "date": "15/March/2012"
+                },
+                    {"category": "Senior Lady Recurve",	"name": "Kat McManus", "score": 555, "competition": "SUS Indoors", "date": "10/April/2015"}
+                ],
+            
+    
+    "WA 18": [
+                {"category": "Novice Gent Compound", "name": "Dirk Diggler", "score": 400, "competition": "SUSF League Match", "date": "01/November/2005"},
+                {"category": "Novice Lady Longbow",	"name": "Long Bowman", "score": 3, "competition": "Some Shoot", "date": "31/December/2009"}
+            ],
+            
+
+    "WA 1440":
             [
                 {"category": "Senior Gent Recurve",	"name": "Pete Wojtczuk", "score": 1150, "competition": "BUCS Outdoors", "date": "15/June/2012"},
                 {"category": "Senior Lady Recurve",	"name": "Kat McManus", "score": 555, "competition": "SUS Indoors", "date": "10/April/2015"}
             ],
     
-        "Albion":
-            [
+    "Albion": [
                 {"category": "Novice Gent Compound",	"name": "Dirk Diggler", "score": 400, "competition": "SUSF League Match", "date": "01/November/2005"},
                 {"category": "Novice Lady Longbow",	"name": "Long Bowman", "score": 80, "competition": "Some Other Shoot", "date": "31/December/2009"}
             ]
-    }        
 }

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hello Handlebars</title>
+ 
+  <!-- You can download Handlebars at http:// handlebarsjs.com/ and save it as handlebars-v4.0.2.js on your site. Then make it available by adding the following line. -->
+  <script src="js/handlebars-v4.0.11.js"></script>
+ 
+  <!-- NodeJS is needed to precompile your templates so that your pages load faster. Install it by going to NodeJS.org and then type the following in your terminal to install Handlebars CLI : npm install -g handlebars-->
+ 
+  <!--
+  <script id="result-template" type="text/x-handlebars-template">
+ 
+  </script> -->
+ 
+</head>
+ 
+<body>
+<!-- The information will be placed in this div -->
+  <div id="derekData"></div>
+  
+  <div>
+     <p>list</p>
+     <ol>
+        <div id="roundData"></div>
+      </ol>
+  </div>
+  
+  <div>
+     <p>list2</p>
+     <ol>
+        <div id="roundData2"></div>
+      </ol>
+  </div>
+  
+ 
+  <script type="text/javascript">
+ 
+  // Structure how I want the data to dynamically be
+  // placed by defining the keys in between {{}}
+  var myInfo = "<p>My name is {{name}} and I live at {{street}} in {{city}}, {{state}}</p>";
+  
+  //
+ 
+  // Generate a JS function that will create the output
+
+  var template = Handlebars.compile(myInfo);
+  //
+ 
+  // template receives the key / value pairs and puts
+  // them in place
+  var data = template({name: "Derek", street: "123 Main St", city: "Pittsburgh", state: "PA"});
+  //
+ 
+  // Update the div with the completed output
+  document.getElementById('derekData').innerHTML += data;
+ // 
+  </script>
+ 
+ <script type="text/javascript">
+ 
+ var roundList = "{{#each spams}}<li>{{spam}}</li>{{/each}}";
+ 
+ var rtemplate = Handlebars.compile(roundList);
+ 
+ var crud = rtemplate({spams:
+                     [{spam:"eeny"}, 
+                     {spam:"meeny"}, 
+                     {spam:"miney"}, 
+                     {spam:"moe"}]});
+ 
+ document.getElementById('roundData').innerHTML += crud;
+ document.getElementById('roundData').innerHTML += crud;
+ 
+  </script> 
+  
+  
+  
+  <script type="text/javascript">
+ 
+ var roundList = "{{#each spams}}<li>{{spam}}</li>{{/each}}";
+ 
+ var rtemplate = Handlebars.compile(roundList);
+ 
+ var crud = rtemplate({spams:
+                     [{spam:"eeny"}, 
+                     {spam:"meeny"}, 
+                     {spam:"miney"}, 
+                     {spam:"moe"}]});
+ 
+ document.getElementById('roundData').innerHTML += crud;
+ //document.getElementById('roundData2').innerHTML += crud;
+ 
+  </script> 
+  
+  
+  
+  
+  
+  
+  
+  <!--1. Data (json format!) -->
+    <script>
+    var url='data/records.json'; // relative url : 'data.json'; protocole-relative absolute url: '//website.org/path/to/data.json';
+    </script>
+    
+    <!-- 2. Anchor -->
+    <div id="anchor">This div is the <b>#anchor</b>.</div>
+ 
+    <!-- 3. Template -->
+    <script id="tpl" type="text/template">
+        {{#each Portsmouth}}
+            
+            <div>C= {{category}} N= {{name}} S= {{score}} Co= {{competition}} Dt= {{date}}</div>
+        {{/each}}
+    </script>
+ 
+    <!--4. Handlebars.js slingshot -->
+    <script>
+    //4a.function creation
+    var slingshot = function (url, tplId, anchor) {
+     $.getJSON(url, function(data) {
+              var template = $(tplId).html();
+              var stone = Handlebars.compile(template)(data);
+              $(anchor).append(stone);
+     });
+  }
+    //4b.function firing
+    slingshot('records.json', '#tpl', '#anchor'); // since url = 'data.json' , we can use both notations.
+    </script>
+ 
+ 
+</body>
+</html>
