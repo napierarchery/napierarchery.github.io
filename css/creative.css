@@ -47,6 +47,9 @@
 .img-rounded-50 {
   border-radius: 50%; }
 
+.img-rounded-100 {
+  border-radius: 125%; }
+
 body,
 html {
   width: 100%;
