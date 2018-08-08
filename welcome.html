@@ -25,7 +25,7 @@
     <meta name="theme-color" content="#f05f40" />
 
     <title>Edinburgh Napier University Archery : Welcome</title>
-    <link rel="icon" type="image" href="img/nuac-logo.png" />
+    <link rel="icon" type="image" href="img/logo/Rnuac-logoSM.png" />
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -44,10 +44,45 @@
 </head>
 
 <body id="page-top">
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Edinburgh Napier Archery</a>
+            <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#try">Try Archery</a>
+                    </li>
+                    <!--    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#first-session">Your First Session</a>
+                    </li>
+                -->
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#links">Find Out More</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -60,14 +95,83 @@
                         <strong>Edinburgh Napier University Archery</strong>
                     </h1>
                     <hr>
-                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#links">Find Out More</a>
+                    <a class="btn btn-primary btn-xl js-scroll-trigger" href="#try">Try Archery</a>
                 </div>
             </div>
         </div>
     </header>
     <!--End Header-->
 
-    <!--News-->
+
+    <!--- Try Archery -->
+    <section class="bg-primary" id="try">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 mx-auto text-center">
+                    <h2 class="section-heading text-white">Try Archery</h2>
+                    <hr class="light my-4">
+                    <br/>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 mx-auto text-left">
+                            <p class="text-faded">Our beginner training sessions are held at :</p>
+                            <p class="text-faded"><big>North Merchiston Club</big><br> 48 Watson Crescent<br /> EH11 1EP</p>
+
+                            <p class="text-faded"><big>Time</big> : 16:00-19:00</p>
+
+                            <p class="text-faded"><big>Day</big> : Every Sunday starting from 16/September</p>
+                            <br>
+                            <p class="text-faded">These links will help you get here:</p>
+                            <a href="https://www.lothianbuses.com/live-travel-info/journey-planner/" target="_blank" rel="noopener"><img class="img-responsive" src="img/lothian-logo.png" width="50%" alt="Lothian Buses-Logo"></a>
+                            &nbsp;
+                            <a href="https://goo.gl/maps/ziPgySDYn8z" target="_blank" rel="noopener"><img class="img-responsive" src="img/googlemap-logo.png" width="20%" alt="Google Maps-Logo"></a>
+                            <br><br><br>
+                        </div>
+
+                        <br><br>
+
+                        <div class="col-lg-1 col-md-1"></div>
+                        <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 mx-auto text-center">
+                            <p class="text-faded mb-10 text-center">If you want to try Archery, just come along to any of our beginner training sessions. We'll provide you with coaching and equipment. We even provide the first four sessions free, so you can see if you like what we have to offer
+                                without any cost.</p>
+                            <p class="text-faded mb-10 text-center">If you decide to join us, you will also recieve membership with the Scottish Archery Association, Archery GB, and the Scottish Field Archery Association if you so desire. You will also be provided with insurance so you can
+                                shoot with any club that is affiliated with the World Archery Federation.</p>
+                            <p class="text-faded mb-10 text-center">We host or take part in several competitions, trips, and social events throughout the year. So whether you decide to join as a casual shooter or a competative archer, we have something for almost everyone.</p>
+                        </div>
+                    </div>
+
+                    <br>
+                    <!--    <a class="btn btn-light btn-xl js-scroll-trigger" href="#first-session">Your First Session</a>
+                -->
+                    <a class="btn btn-light btn-xl js-scroll-trigger" href="#links">Find Out More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Try Archery -->
+
+
+    <!-- First Session 
+    <section class="bg-dark text-white" id="first-session">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 mx-auto text-center">
+                    <h2 class="section-heading">Your First Session</h2>
+                    <hr class="light my-4">
+                    <p class="mb-10"></p>
+
+
+                    <br/>
+                    <a class="btn btn-light btn-xl js-scroll-trigger" href="#links">Find Out More</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+-->
+
+
+    <!--Links-->
     <section id="links">
         <div class="container">
             <div class="row">
@@ -79,7 +183,8 @@
                         people who have never even held a bow before. We even have a selection of club equipment that beginners can use to learn how to shoot with the help of our volunteer coaches.</p>
                     <p class="text-muted mb-4">To find out more about us, just click on the icons below to visit our website or to follow our social media.</p>
                     <br/>
-                    <a href="https://napierarchery.github.io" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/nuac-logo.png" width="35%" alt="Edinburgh Napier University Archery-Logo"></a>
+
+                    <a href="https://napierarchery.github.io" target="_blank" rel="noopener"><img class="img-responsive img-rounded img-shaded" src="img/logo/nuac-logo.png" width="25%" alt="Edinburgh Napier University Archery-Logo"></a>
 
                     <br/><br/><br/>
                 </div>
@@ -90,16 +195,16 @@
                 <div class="row">
                     <div class="col-lg-1 col-md-1"></div>
                     <div class="col-lg-2 col-md-2 mx-auto text-center"><br/>
-                        <a href="https://www.facebook.com/NapierArchery" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/facebook-icon.png" width="85%" alt="Facebook"></a>
+                        <a href="https://www.facebook.com/NapierArchery" target="_blank" rel="noopener"><img class="img-responsive img-rounded img-shaded" src="img/facebook-icon.png" width="85%" alt="Facebook"></a>
                     </div>
                     <div class="col-lg-2 col-md-2 mx-auto text-center"><br/>
-                        <a href="https://www.twitter.com/NapierArchery" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/twitter-icon.png" width="85%" alt="Twitter"></a>
+                        <a href="https://www.twitter.com/NapierArchery" target="_blank" rel="noopener"><img class="img-responsive img-rounded img-shaded" src="img/twitter-icon.png" width="85%" alt="Twitter"></a>
                     </div>
                     <div class="col-lg-2 col-md-2 mx-auto text-center"><br/>
-                        <a href="https://www.instagram.com/napierarchery/" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/instagram-icon.png" width="85%" alt="Instagram"></a>
+                        <a href="https://www.instagram.com/napierarchery/" target="_blank" rel="noopener"><img class="img-responsive img-rounded img-shaded" src="img/instagram-icon.png" width="85%" alt="Instagram"></a>
                     </div>
                     <div class="col-lg-2 col-md-2 mx-auto text-center"><br/>
-                        <a href="https://www.snapchat.com/add/naparchery" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/snapchat-icon.png" width="85%" alt="Snapchat"></a>
+                        <a href="https://www.snapchat.com/add/naparchery" target="_blank" rel="noopener"><img class="img-responsive img-rounded img-shaded" src="img/snapchat-icon.png" width="85%" alt="Snapchat"></a>
                     </div>
                     <div class="col-lg-1 col-md-1"></div>
                 </div>
@@ -108,31 +213,58 @@
             <!-- Social Media Links for small screens -->
             <div>
                 <span class="mx-auto text-center d-block d-md-none">
-                <a href="https://www.facebook.com/NapierArchery" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/facebook-icon.png" width="20%" alt="Facebook"></a>
+                <a href="https://www.facebook.com/NapierArchery" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/facebook-icon.png" width="15%" alt="Facebook"></a>
                 &nbsp;                
-                <a href="https://twitter.com/NapierArchery" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/twitter-icon.png" width = "20%" alt="Twitter" ></a>
+                <a href="https://twitter.com/NapierArchery" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/twitter-icon.png" width = "15%" alt="Twitter" ></a>
                 &nbsp;
-                <a href="https://www.instagram.com/napierarchery/" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/instagram-icon.png" width = "20%" alt="Instagram" ></a>   
+                <a href="https://www.instagram.com/napierarchery/" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/instagram-icon.png" width = "15%" alt="Instagram" ></a>   
                 &nbsp;  
-                <a href="https://www.snapchat.com/add/naparchery" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/snapchat-icon.png" width = "20%" alt="Snapchat" ></a>
+                <a href="https://www.snapchat.com/add/naparchery" target="_blank" rel="noopener"><img class="img-responsive img-rounded" src="img/snapchat-icon.png" width = "15%" alt="Snapchat" ></a>
             </span>
             </div>
-            <!--End Header-->
-
-
-            <!-- Bootstrap core JavaScript -->
-            <script src="vendor/jquery/jquery.min.js"></script>
-            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-            <!-- Plugin JavaScript -->
-            <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-            <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-            <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-            <!-- Custom scripts for this template -->
-            <script src="js/creative.min.js"></script>
         </div>
     </section>
+    <!--End Links-->
+
+    <!--Contact-->
+    <section class="bg-dark text-white" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <hr class="light my-4">
+                    <p class="mb-10">If you want to know more or have any questions, just send us a message on Facebook or send us an email and we will get back to you as soon as possible!</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mr-auto text-center">
+                    <br/><br/><br/>
+                    <a href="mailto:napierarchery@gmail.com" target="_blank" rel="noopener"><i class="fa fa-envelope-o fa-5x mb-3 sr-contact" alt="Email Napier Archer"></i></a>
+                    <p><a href="mailto:napierarchery@gmail.com" target="_blank" rel="noopener">napierarchery@gmail.com</a></p>
+                    <br/><br/><br/>
+                </div>
+                <div class="fb-page col-lg-6 col-md-6 col-sm-12 col-xs-12 mr-auto text-center" data-href="https://www.facebook.com/napierarchery/" data-tabs="messages" data-width="340" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+                    data-show-facepile="false">
+                    <blockquote cite="https://www.facebook.com/napierarchery/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/napierarchery/">Napier University Archery Club</a></blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Contact-->
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
 </body>
 
 </html>

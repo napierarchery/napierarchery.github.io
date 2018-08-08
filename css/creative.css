@@ -50,6 +50,9 @@
 .img-rounded-100 {
   border-radius: 125%; }
 
+.img-shaded {
+  box-shadow: 0 0 0 0.2rem rgba(150, 150, 150, 0.25) !important; }
+
 body,
 html {
   width: 100%;
@@ -89,7 +92,7 @@ h6 {
   background-color: #212529 !important; }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.7); }
+  color: rgba(255, 255, 255, 0.9); }
 
 section {
   padding: 4rem 0; }
@@ -260,4 +263,4 @@ header.masthead {
     box-shadow: 0 0 0 0.2rem rgba(230, 230, 230, 0.5) !important; }
 
 .img-shaded:hover, .img-shaded:focus, .img-shaded:active {
-  box-shadow: 0 0 0 0.2rem rgba(230, 230, 230, 0.5) !important; }
+  box-shadow: 0 0 0 0.2rem rgba(160, 160, 160, 0.5) !important; }
